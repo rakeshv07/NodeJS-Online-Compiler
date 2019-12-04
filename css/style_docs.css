@@ -1,0 +1,54 @@
+.docs-article {
+    padding:                            10rem;
+    flex:                               3 1 0%;
+}
+      .docs-heading {
+  
+        background-color:               rgb(36, 40, 42);
+        box-shadow:                     rgba(0, 0, 0, 0.3) 0px 3px 3px;
+        position:                       relative;
+        margin-bottom:                  1rem;
+        background-image:               linear-gradient(-45deg, rgb(34, 155, 241) 0%, rgb(13, 123, 201) 100%);
+        color:                          white;
+        padding:                        2rem;
+        border-radius:                  2px;
+      } 
+        .docs-title {
+  
+          font-size:                    3rem;
+          font-weight:                  600;
+        }
+  
+        .docs_description {
+  
+          font-size:                    1.5rem;
+          font-weight:                  400;
+          margin-bottom:                0.20rem;
+   }
+
+  .docs-content {
+    line-height:                        1.4;
+    color:                            rgba(255, 255, 255, 0.8);
+    padding-top:                        2.5rem;
+  }  
+    #section-content {
+      background-color:               rgb(36, 40, 42);
+      box-shadow:                     rgba(0, 0, 0, 0.3) 0px 3px 3px;;
+      border-radius:                    2px;
+      padding:                          1.5rem;
+      margin-bottom:                    1rem;
+      overflow-x:                       auto;
+    }
+       
+    #section-heading {
+    font-weight:                  600;
+    color:                        white;
+    margin:                       1.5rem 0px;
+    font-size:                    2rem;
+    }
+
+           p {
+            margin:                     0 0 1.8075rem;
+            font-size: 1.3rem;
+          } 
+  

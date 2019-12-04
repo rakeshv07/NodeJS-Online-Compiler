@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Code Online</title>
+  <link rel="stylesheet" href="css/style11.css" type="text/css" />
+  <link rel="stylesheet" href="css/style22.css" type="text/css" />
+  <script src="js/js11.js"></script>
+
+</head>
+
+<body onload="prepareTheme('Java Program')">
+
+  <div class="form-header">
+    <h2 style="color:red;font-size: 33px;font-family:san-serif;text-align: center;color:white;"><br>Code Online</h2>
+  </div>
+
+  <form method="post" action="/output" novalidate>
+    <div class="form-field">
+      <label for="codeSelection" style="color:blue;font-size: 20px;">Select Language</label>
+      <select name="language" id="" class="input">
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="C">C</option>
+        <option value="C++">C++</option>
+        <!-- <option value="Node.js">Node.js</option> -->
+
+      </select>
+    </div>
+
+    <div class="form-field">
+      <label for="code" style="color:blue;font-size: 20px;">Code</label>
+      <textarea class="input" id="codeArea" name="codeArea" rows="14" cols="30" autofocus
+        onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}">
+ /* Welcome to Code Online */           
+class Main 
+{
+    public static void main(String args[])
+    {
+        System.out.println("Hello World From Code Online :)");
+    }
+}
+</textarea>
+
+      <label for="code" style="color:blue;font-size: 20px;">Inputs</label>
+      <textarea class="input" id="inputsProgram" name="inputArea" rows="4" cols="30"
+        style="font-weight:bolder;font-size:20px;color:black;border:1px solid black;"
+        placeholder="Input must be separated by Line"></textarea>
+
+    </div>
+
+
+    <div class="form-actions">
+      <button class="btn" type="submit">Execute</button> <button class="btn" type="reset"
+        onClick="refreshPage()">Reset</button>
+
+    </div>
+  </form>
+
+  <script>
+    var editor;
+    function prepareTheme(defaultCodeText) {
+      editor = CodeMirror.fromTextArea(document.getElementById("codeArea"),
+        {
+          lineNumbers: true,
+          styleActiveLine: true,
+          matchBrackets: true
+        });
+      var theme = "blackboard";
+      editor.setOption("theme", theme);
+
+    }
+
+    function refreshPage() {
+
+      location.reload();
+      alert("Success");
+    }
+
+  </script>
+
+</body>
+
+</html>

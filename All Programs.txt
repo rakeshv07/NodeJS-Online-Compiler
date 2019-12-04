@@ -1,0 +1,69 @@
+class Main {
+ public static void main(String args[]){
+     System.out.println("Hello World From Code Online :)");
+ }
+}
+
+
+import java.util.*;
+class Main
+{
+	public static void main(String[] args)
+	{
+		Scanner s =new Scanner(System.in);
+		int no = s.nextInt();
+		System.out.println("You Entered : "+no);
+		s.close();
+	}
+}
+
+
+print("HI")
+
+
+a = input()
+print(a)
+
+
+#include <stdio.h>
+int main()
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+
+
+
+#include <stdio.h>
+int main()
+{
+    int no;
+    scanf("%d",&no);
+    printf("You Entered %d",no);
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    cout << "Hello, World!";
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int no;
+    cin>>no;
+    cout<<"You Entered" <<no;
+    return 0;
+}
+
+
+//pscp c:\documents\info.txt userid@server.example.com:/tmp/foo/info.txt
